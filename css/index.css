@@ -28,10 +28,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+    width: 100vw;
+}
 body {
 	line-height: 1;
     color: rgb(225, 239, 230);
     background: rgb(0, 4, 17,);
+
     
 }
 ol, ul {
@@ -341,7 +345,26 @@ footer  nav ul a{
 @media (max-width: 428px) {
     /* header section */
     
-
+    header>div{
+        text-align: center;
+   }
+   header div .head1 {
+     
+       text-align: center;
+       font-size: 4.2rem;
+       margin-bottom: 2rem;
+       
+   }
+ 
+  
+   header div nav ul{
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 1rem;
+   }
+   header div nav ul a{
+       font-size: 3rem;
+   }
     /* gallery section */
     .gallery {
         height: auto;
@@ -390,5 +413,53 @@ footer  nav ul a{
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+        
+    }
+    footer .input{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    footer .input p{
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    footer form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer form .mail{
+        display: block;
+        width: 100%;
+    }
+    footer form .btn{
+        width: 100%;
+    }
+     footer nav{
+        border: 2px solid red;
+     }
+    footer div nav ul{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    footer div nav ul a{
+        font-size: 3rem;
+    }
+    footer .hak{
+        border: 2px solid red;
+        width: 100%;
+        margin: auto;
+    }
+    .spacer-sm{
+        width: 100vw;
     }
 }
